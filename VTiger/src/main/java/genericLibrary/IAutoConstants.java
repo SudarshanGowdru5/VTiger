@@ -6,10 +6,10 @@ package genericLibrary;
  */
 public interface IAutoConstants {
   String CHROME_KEY ="webdriver.chrome.driver";
-  String CHROME_VALUE="./scr/main/resources/chromedriver.exe";
+  String CHROME_VALUE="./src/main/resources/chromedriver.exe";
   
   String FIREFOX_KEY ="webdriver.gecko.driver";
-  String FIREFOX_VALUE="./scr/main/resources/geckodriver.exe";
+  String FIREFOX_VALUE="./src/main/resources/geckodriver.exe";
   
   String URL="http://localhost:8888/index.php?action=Login&module=Users";
   String USER_NAME="admin";
