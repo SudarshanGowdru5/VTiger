@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Execuiting TC_1]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfully Organization page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfully createOrganization page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfully entered the data into the organization TextField]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12122" started-at="2021-08-17T15:35:18 IST" finished-at="2021-08-17T15:35:30 IST">
+  <suite name="Default suite" duration-ms="42703" started-at="2021-08-31T12:27:01 IST" finished-at="2021-08-31T12:27:44 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12122" started-at="2021-08-17T15:35:18 IST" finished-at="2021-08-17T15:35:30 IST">
-      <class name="testScripts.Tc_01">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testScripts.Tc_01@30a3107a]" name="launchBrowser" duration-ms="12067" started-at="2021-08-17T15:35:18 IST" finished-at="2021-08-17T15:35:30 IST">
+    <test name="Default test" duration-ms="42703" started-at="2021-08-31T12:27:01 IST" finished-at="2021-08-31T12:27:44 IST">
+      <class name="organization.TC_1Test">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:organization.TC_1Test@7113b13f]" name="preCondition" is-config="true" duration-ms="12032" started-at="2021-08-31T12:27:01 IST" finished-at="2021-08-31T12:27:13 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-      </class> <!-- testScripts.Tc_01 -->
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="loginCredentials()[pri:0, instance:organization.TC_1Test@7113b13f]" name="loginCredentials" is-config="true" duration-ms="11481" started-at="2021-08-31T12:27:13 IST" finished-at="2021-08-31T12:27:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCredentials -->
+        <test-method status="PASS" signature="createOrganization()[pri:0, instance:organization.TC_1Test@7113b13f]" name="createOrganization" duration-ms="12123" started-at="2021-08-31T12:27:25 IST" finished-at="2021-08-31T12:27:37 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Execuiting TC_1]]>
+            </line>
+            <line>
+              <![CDATA[Sucessfully Organization page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Sucessfully createOrganization page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Sucessfully entered the data into the organization TextField]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createOrganization -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:organization.TC_1Test@7113b13f]" name="logout" is-config="true" duration-ms="5996" started-at="2021-08-31T12:27:37 IST" finished-at="2021-08-31T12:27:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:organization.TC_1Test@7113b13f]" name="postCondition" is-config="true" duration-ms="794" started-at="2021-08-31T12:27:43 IST" finished-at="2021-08-31T12:27:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- organization.TC_1Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
