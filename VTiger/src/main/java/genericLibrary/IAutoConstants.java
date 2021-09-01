@@ -15,7 +15,7 @@ public interface IAutoConstants {
   String USER_NAME="admin";
   String PASSWORD="root";
   
-  String EXCEL_PATH="./scr/test/resources/file.xlsx";
-  String PROPERTY_PATH="./scr/test/resources/property.properties";
+  String EXCEL_PATH="./src/test/resources/file.xlsx";
+  String PROPERTY_PATH="./src/test/resources/property.properties";
   
 }
