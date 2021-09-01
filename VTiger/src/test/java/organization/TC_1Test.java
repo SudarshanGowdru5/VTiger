@@ -27,7 +27,6 @@ public class TC_1Test extends BaseTest {
 		Reporter.log("Sucessfully createOrganization page is Displayed",true);
 		CreateNewOrganizationPage createNewOrganization=new CreateNewOrganizationPage(driver);
 		ExcelUtil util = new ExcelUtil();
-		String name="TestYantra";
 		Random rnd=new Random();
 		int rnm = rnd.nextInt(1000);
 		createNewOrganization.getOrganizationName().clear();
