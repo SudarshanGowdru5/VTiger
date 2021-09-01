@@ -2,8 +2,6 @@ package organization;
 
 import java.util.Random;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -25,12 +23,9 @@ public class TC_4Test extends BaseTest{
 		OrganizationsPage organizationPage= new OrganizationsPage(driver);
 		organizationPage.getCreateOrganization().click();
 		Reporter.log("Sucessfully entered the data into the organization TextField",true);
-		WebElement organizationTextField = driver.findElement(By.name("accountname"));
 		ExcelUtil util = new ExcelUtil();
 		Random rnd=new Random();
 		int rnm = rnd.nextInt(1000);
-		organizationTextField.clear();
-		organizationTextField.sendKeys(util.excelStringFile("Sheet1", 0, 0)+rnm);
 		Reporter.log("Sucessfully entered the data into the organization TextField",true);
 		createNewOrganization.getOrganizationName().clear();
 		createNewOrganization.getOrganizationName().sendKeys(util.excelStringFile("Sheet1", 0, 0)+rnm);

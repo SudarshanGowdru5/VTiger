@@ -12,9 +12,6 @@ import pomRepository.CreateNewOrganizationPage;
 import pomRepository.HomePage;
 import pomRepository.OrganizationsPage;
 
-
-
-
 public class TC_1Test extends BaseTest {
 	@Test
 	public void createOrganization() throws Exception {
@@ -35,7 +32,5 @@ public class TC_1Test extends BaseTest {
 		Reporter.log("Sucessfully entered the data into the organization TextField",true);
 		createNewOrganization.getSave().click();
 		Thread.sleep(1000);
-
-
 	}
 }
