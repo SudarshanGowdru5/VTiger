@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Execuiting TC_1]]>
+      <![CDATA[Execuiting TC_3]]>
     </line>
     <line>
       <![CDATA[Sucessfully Organization page is Displayed]]>
@@ -13,24 +13,30 @@
     <line>
       <![CDATA[Sucessfully entered the data into the organization TextField]]>
     </line>
+    <line>
+      <![CDATA[Sucessfully selected a categaory from Industry DropDown]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfully saved the Organization]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42703" started-at="2021-08-31T12:27:01 IST" finished-at="2021-08-31T12:27:44 IST">
+  <suite name="Default suite" duration-ms="59275" started-at="2021-09-01T13:17:56 IST" finished-at="2021-09-01T13:18:55 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42703" started-at="2021-08-31T12:27:01 IST" finished-at="2021-08-31T12:27:44 IST">
-      <class name="organization.TC_1Test">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:organization.TC_1Test@7113b13f]" name="preCondition" is-config="true" duration-ms="12032" started-at="2021-08-31T12:27:01 IST" finished-at="2021-08-31T12:27:13 IST">
+    <test name="Default test" duration-ms="59275" started-at="2021-09-01T13:17:56 IST" finished-at="2021-09-01T13:18:55 IST">
+      <class name="organization.TC_3Test">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:organization.TC_3Test@7b69c6ba]" name="preCondition" is-config="true" duration-ms="15717" started-at="2021-09-01T13:17:56 IST" finished-at="2021-09-01T13:18:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="loginCredentials()[pri:0, instance:organization.TC_1Test@7113b13f]" name="loginCredentials" is-config="true" duration-ms="11481" started-at="2021-08-31T12:27:13 IST" finished-at="2021-08-31T12:27:25 IST">
+        <test-method status="PASS" signature="loginCredentials()[pri:0, instance:organization.TC_3Test@7b69c6ba]" name="loginCredentials" is-config="true" duration-ms="13432" started-at="2021-09-01T13:18:12 IST" finished-at="2021-09-01T13:18:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCredentials -->
-        <test-method status="PASS" signature="createOrganization()[pri:0, instance:organization.TC_1Test@7113b13f]" name="createOrganization" duration-ms="12123" started-at="2021-08-31T12:27:25 IST" finished-at="2021-08-31T12:27:37 IST">
+        <test-method status="PASS" signature="createOrganizationWithIndustry()[pri:0, instance:organization.TC_3Test@7b69c6ba]" name="createOrganizationWithIndustry" duration-ms="18290" started-at="2021-09-01T13:18:25 IST" finished-at="2021-09-01T13:18:43 IST">
           <reporter-output>
             <line>
-              <![CDATA[Execuiting TC_1]]>
+              <![CDATA[Execuiting TC_3]]>
             </line>
             <line>
               <![CDATA[Sucessfully Organization page is Displayed]]>
@@ -41,17 +47,23 @@
             <line>
               <![CDATA[Sucessfully entered the data into the organization TextField]]>
             </line>
+            <line>
+              <![CDATA[Sucessfully selected a categaory from Industry DropDown]]>
+            </line>
+            <line>
+              <![CDATA[Sucessfully saved the Organization]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- createOrganization -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:organization.TC_1Test@7113b13f]" name="logout" is-config="true" duration-ms="5996" started-at="2021-08-31T12:27:37 IST" finished-at="2021-08-31T12:27:43 IST">
+        </test-method> <!-- createOrganizationWithIndustry -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:organization.TC_3Test@7b69c6ba]" name="logout" is-config="true" duration-ms="10893" started-at="2021-09-01T13:18:43 IST" finished-at="2021-09-01T13:18:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:organization.TC_1Test@7113b13f]" name="postCondition" is-config="true" duration-ms="794" started-at="2021-08-31T12:27:43 IST" finished-at="2021-08-31T12:27:44 IST">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:organization.TC_3Test@7b69c6ba]" name="postCondition" is-config="true" duration-ms="659" started-at="2021-09-01T13:18:54 IST" finished-at="2021-09-01T13:18:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- organization.TC_1Test -->
+      </class> <!-- organization.TC_3Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
