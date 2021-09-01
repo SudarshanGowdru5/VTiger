@@ -10,13 +10,14 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseTest;
+import genericLibrary.ExcelUtil;
 import pomRepository.CreateNewOrganizationPage;
 import pomRepository.HomePage;
 import pomRepository.OrganizationsPage;
 
 public class TC_5Test extends BaseTest{
 	@Test
-	public void CheckWhileCreatingNewOrganizationTypeDropDownOption() throws InterruptedException {
+	public void CheckWhileCreatingNewOrganizationTypeDropDownOption() throws Exception {
 		HomePage homePage=new HomePage(driver);
 		CreateNewOrganizationPage createNewOrganization=new CreateNewOrganizationPage(driver);
 		Reporter.log("Execuiting TC_5",true);
@@ -26,16 +27,15 @@ public class TC_5Test extends BaseTest{
 		organizationPage.getCreateOrganization().click();
 		Reporter.log("Sucessfully entered the data into the organization TextField",true);
 		WebElement organizationTextField = driver.findElement(By.name("accountname"));
-		String name="TestYantra";
+		ExcelUtil util = new ExcelUtil();
 		Random rnd=new Random();
 		int rnm = rnd.nextInt(1000);
-
 		organizationTextField.clear();
-		organizationTextField.sendKeys(name+rnm);
+		organizationTextField.sendKeys(util.excelStringFile("Sheet1", 0, 0)+rnm);
 		Reporter.log("Sucessfully entered the data into the organization TextField",true);
 		createNewOrganization.getOrganizationName().clear();
-		createNewOrganization.getOrganizationName().sendKeys(name+rnm);
-		Assert.assertEquals(name+rnm,createNewOrganization.getOrganizationName().getAttribute("value"), "entered Value is Wrong");
+		createNewOrganization.getOrganizationName().sendKeys(util.excelStringFile("Sheet1", 0, 0)+rnm);
+		Assert.assertEquals(util.excelStringFile("Sheet1", 0, 0)+rnm,createNewOrganization.getOrganizationName().getAttribute("value"), "entered Value is Wrong");
 		WebElement typeDropDown = createNewOrganization.getTypeDropDown();
 		Select select=new Select(typeDropDown);
 		select.selectByVisibleText("Partner");

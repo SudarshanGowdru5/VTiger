@@ -10,13 +10,14 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseTest;
+import genericLibrary.ExcelUtil;
 import pomRepository.CreateNewOrganizationPage;
 import pomRepository.HomePage;
 import pomRepository.OrganizationsPage;
 
 public class TC_3Test extends BaseTest{
 	@Test
-	public void createOrganizationWithIndustry() throws InterruptedException {
+	public void createOrganizationWithIndustry() throws Exception {
 		HomePage homePage=new HomePage(driver);
 		Reporter.log("Execuiting TC_3",true);
 		CreateNewOrganizationPage createNewOrganization=new CreateNewOrganizationPage(driver);
@@ -26,15 +27,15 @@ public class TC_3Test extends BaseTest{
 		organizationPage.getCreateOrganization().click();
 		Reporter.log("Sucessfully createOrganization page is Displayed",true);
 		WebElement organizationTextField = driver.findElement(By.name("accountname"));
-		String name="TestYantra";
+		ExcelUtil util = new ExcelUtil();
 		Random rnd=new Random();
 		int rnm = rnd.nextInt(1000);
 		organizationTextField.clear();
-		organizationTextField.sendKeys(name+rnm);
+		organizationTextField.sendKeys(util.excelStringFile("Sheet1", 0, 0)+rnm);
 		Reporter.log("Sucessfully entered the data into the organization TextField",true);
 		createNewOrganization.getOrganizationName().clear();
-		createNewOrganization.getOrganizationName().sendKeys(name+rnm);
-		Assert.assertEquals(name+rnm,createNewOrganization.getOrganizationName().getAttribute("value"), "entered Value is Wrong");
+		createNewOrganization.getOrganizationName().sendKeys(util.excelStringFile("Sheet1", 0, 0)+rnm);
+		Assert.assertEquals(util.excelStringFile("Sheet1", 0, 0)+rnm,createNewOrganization.getOrganizationName().getAttribute("value"), "entered Value is Wrong");
 		WebElement industryDropDown = createNewOrganization.getIndustryDropDown();
 		Select select=new Select(industryDropDown);
 		select.selectByVisibleText("Education");
