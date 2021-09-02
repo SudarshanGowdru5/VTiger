@@ -31,6 +31,5 @@ public class TC_1Test extends BaseTest {
 		Assert.assertEquals(util.excelStringFile("Sheet1", 0, 0)+rnm,createNewOrganization.getOrganizationName().getAttribute("value"), "entered Value is Wrong");
 		Reporter.log("Sucessfully entered the data into the organization TextField",true);
 		createNewOrganization.getSave().click();
-		Thread.sleep(1000);
 	}
 }
