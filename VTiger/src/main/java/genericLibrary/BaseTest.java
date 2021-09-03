@@ -19,7 +19,7 @@ import pomRepository.LoginPage;
  *
  */
 public class BaseTest {
-  public static WebDriver driver;
+	public static WebDriver driver;
 	@BeforeClass
 	/**
 	 * This method is used to perform precondition actions on the application

@@ -38,6 +38,6 @@ public class TC_5Test extends BaseTest{
 		Reporter.log("Sucessfully selected a categaory from type DropDown",true);
 		createNewOrganization.getSave().click();
 		Reporter.log("Sucessfully saved the Organization",true);
-		Thread.sleep(1000);
+		Thread.sleep(500);
 	}
 }
